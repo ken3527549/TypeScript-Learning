@@ -286,9 +286,9 @@ function null_undefinded_void_never() {
     }
 
     // 回傳undefined
-    function b() {
-        return undefined
-    }
+    // function b() {
+    //     return undefined
+    // }
 
     // 回傳void
     function c() {
@@ -302,11 +302,11 @@ function null_undefinded_void_never() {
     }
 
     // 回傳never
-    function e() {
-        while(true) {
-            doSomething()
-        }
-    }
+    // function e() {
+    //     while(true) {
+    //         doSomething()
+    //     }
+    // }
 
 }
 
@@ -317,11 +317,11 @@ function null_undefinded_void_never() {
  */
 function strictNullChecks() {
     type Pizza = null // 
-    function addDeliciousFish(pizza: Pizza) {
-        return pizza.addAnchovies()
-    }
+    // function addDeliciousFish(pizza: Pizza) {
+    //     return pizza.addAnchovies()
+    // }
     // typescript藉由 strictNullChecks = false來讓函式得以運行
-    addDeliciousFish(null)
+    // addDeliciousFish(null)
 }
 
 function enums() {
@@ -389,10 +389,10 @@ function const_enum() {
     }
 
     let a = Language.English
-    let b = Language.Tagalog // 類型 'typeof Language' 沒有屬性 'Tagalog'。ts(2339)
+    // let b = Language.Tagalog // 類型 'typeof Language' 沒有屬性 'Tagalog'。ts(2339)
 
-    let c = Language[0] // 若要存取常數列舉成員，必須透過字串常值。ts(2476)
-    let d = Language[6] // 若要存取常數列舉成員，必須透過字串常值。ts(2476)
+    // let c = Language[0] // 若要存取常數列舉成員，必須透過字串常值。ts(2476)
+    // let d = Language[6] // 若要存取常數列舉成員，必須透過字串常值。ts(2476)
 }
 
 /**
